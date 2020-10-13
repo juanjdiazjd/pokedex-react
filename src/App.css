@@ -1,0 +1,47 @@
+
+.App {
+  padding: 20px;
+  display: flex;
+user-select: none;
+flex: 1 0 calc(1vw - 1px);
+}
+
+body :before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-filter: blur(5px);
+  background: url("./images/wall.jpg") no-repeat;
+  background-size: contain;
+
+}
+.wrapper :before{
+  -webkit-filter: none!important;
+}
+div.pokeball::before{
+  -webkit-filter: none!important;
+  left:auto!important;
+  top:auto!important;
+  /* background:none!important; */
+  background-size:none!important;
+}
+.container{
+  background:white!important;
+  -webkit-box-shadow: 4px -12px 38px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px -12px 38px -9px rgba(0,0,0,0.75);
+  box-shadow: 4px -12px 38px -9px rgba(0,0,0,0.75);
+}
+
+#root{
+  position:relative;
+}
+li ::before{
+  background:none;
+}
+div ::before{
+  background:none;
+}

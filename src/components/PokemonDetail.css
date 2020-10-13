@@ -1,0 +1,50 @@
+.card-title-custom{
+    font-size:3em!important;
+    display:flex;
+}
+.content{
+    padding: 0px;
+
+}
+.pokeImage {
+    -webkit-animation: translate-title 0.8s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: translate-title 0.8s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes translate-title {
+    0% {    
+        min-width: 100%;
+    }
+    100% {
+      
+        min-width: 0;
+    }
+}
+@keyframes translate-title {
+    0% {
+        min-width: 0;
+    }
+    100% {
+       min-width: 100%;
+       
+    }
+}
+
+
+
+.icon-poke{
+ 
+        -webkit-animation: action 0.1s infinite  alternate;
+        animation: action 0.1s infinite  alternate;
+
+
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(); }
+    100% { transform: translateY(-7px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3px); }
+}
