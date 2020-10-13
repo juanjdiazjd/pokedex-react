@@ -15,7 +15,7 @@ import './App.css'
 
 function App(){
 
-  console.log(process.env.REACT_APP_URL_POKEAPI)
+  console.log(process.env.URL_POKEAPI)
 
 
         return(

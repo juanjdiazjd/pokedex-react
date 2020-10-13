@@ -34,7 +34,6 @@ const PokemonCard = ({ card, loading }) => {
           </h5>
           <span>{convertToText(card.dataDetails.data.id)}</span>
         </Card.Text>
-        {/* <Button onClick={() => setValues(card)} variant="primary">Details</Button> */}
       </Card.Body>
     </div>
 

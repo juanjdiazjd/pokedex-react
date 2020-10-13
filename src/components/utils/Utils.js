@@ -17,7 +17,7 @@ const  checkFailed = async (responses) => {
 
 export const   fetchingDetailPokemon =  async (id) => {
   return new Promise(function (resolve,reject) {
-    let promises =  [ axios.get(process.env.REACT_APP_URL_POKEAPI+"pokemon/"+id.toString()), axios.get(process.env.REACT_APP_URL_POKEAPI+"pokemon-species/"+id.toString())]
+    let promises =  [ axios.get(process.env.URL_POKEAPI+"pokemon/"+id.toString()), axios.get(process.env.URL_POKEAPI+"pokemon-species/"+id.toString())]
     const promisesResolved = promises.map(promise => promise.catch(error => ({ error })))
     try {
       axios.all(promisesResolved)

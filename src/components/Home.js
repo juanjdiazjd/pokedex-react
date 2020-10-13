@@ -20,7 +20,7 @@ const Home = props => {
     const [limit] = useState(5)
     const [cardsPerPage] = useState(5);
 
-    const [filterPokeValue, setFilterPokeValue] = useState("");
+
 
     //Carga de datos a traves de API.
     useEffect(() => {
@@ -54,10 +54,7 @@ const Home = props => {
         }
         setCurrentPage(pageNumber);
 
-        
-        // let data = await fetchingData()
-        // setPokemonFiltered(data)
-        // setCurrentPage(pageNumber);
+
     }
 
     //fetching datafunction checkFailed (then) {
@@ -66,7 +63,7 @@ const Home = props => {
     const fetchingData = async () => {
         
       
-        let dataPokemon = await axios.get(process.env.REACT_APP_URL_POKEAPI +"pokemon?offset="+offset.toString()+"&limit=" + limit.toString())
+        let dataPokemon = await axios.get(process.env.URL_POKEAPI +"pokemon?offset="+offset.toString()+"&limit=" + limit.toString())
         let pokeData = dataPokemon.data.results
         console.log(pokeData)
         // 
@@ -89,12 +86,7 @@ const Home = props => {
         if(offset == 0){
             setCount(dataPokemon.data.count)
         }
-      
-        // let response = await Promise.all(
-        //     devolverEnlaces()
-        // )
-        // console.log(response)
-        // let dataList = await procesarData(data)
+
 
     }
     const devolverEnlaces = async (arrayPokemonData) => {
@@ -127,9 +119,7 @@ const Home = props => {
                 <PokemonCard card={card} loading={loading} />
                 </Link>
         })}
-       
-       
-        
+
         </div>
             </Col></Row></Container>
         

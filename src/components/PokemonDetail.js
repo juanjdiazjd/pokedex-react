@@ -60,7 +60,6 @@ const PokemonDetail = props =>{
            <div class="content">
            <Card.Title className="card-title-custom">{pokemonName} <h5 style={{ marginLeft: "20px",display: "inline-block"}}> <Badge   style={{ top: "6%",position: "absolute",display: "inline-block"}} variant="secondary"><span>{convertToText(id)}</span></Badge></h5></Card.Title>
            </div>
-           {/* Info descripc  ion, tipo, peso, abilities */}
            <div  class="content-details">
           
            {pokemonSpeciesData ? pokemonSpeciesData.map(x=>{

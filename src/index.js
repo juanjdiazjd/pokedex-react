@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "bootswatch/dist/flatly/bootstrap.min.css"; 
-console.log(process.env.REACT_APP_URL_POKEAPI)
+console.log(process.env.URL_POKEAPI)
 ReactDOM.render(
   <React.StrictMode>
     <App />
