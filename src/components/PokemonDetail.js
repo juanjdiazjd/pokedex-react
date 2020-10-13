@@ -4,7 +4,7 @@ import {Card,Container, Row, Col,Badge} from 'react-bootstrap'
 import {fetchingDetailPokemon,convertToText,getPokeColor,getFormatWeight,getFormatHeight} from './utils/Utils'
 import './PokemonDetail.css'
 import not_image from '../images/descarga.png'
-const pokemonDetail = (props) =>{
+const PokemonDetail = props =>{
     const { id } = useParams();
     const [loading, setLoading] = useState(false);
     const [pokemonAbilites, setPokemonAbilities] = useState([]);
@@ -152,4 +152,4 @@ const pokemonDetail = (props) =>{
 
 } 
 
-export default pokemonDetail;
+export default PokemonDetail;

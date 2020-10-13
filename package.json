@@ -1,6 +1,5 @@
 {
   "name": "pokedex-react",
-  "homepage": "https://juanjdiazjd.github.io/pokedex-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,7 +32,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-select": "^3.1.0",
-    "webpack": "^4.42.0"
+    "webpack": "^4.42.0",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -57,5 +57,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
