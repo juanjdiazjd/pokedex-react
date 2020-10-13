@@ -8,7 +8,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+env:
+  REACT_APP_URL_POKEAPI: ${{ secrets.REACT_APP_URL_POKEAPI }}
 jobs:
   build:
 
